@@ -39,7 +39,7 @@ const Login = ({login, isAuthenticated }) => {
         />
       </Helmet>
       <h1 className='auth__title'>Sign In</h1>
-      <p className='auth__lead'>Sign in into yout Account</p>
+      <p className='auth__lead'>Sign in into your Account</p>
       <form className='auth__form' onSubmit={e => onSubmit(e)}>
         <div className='auth__form__group'>
           <input 
