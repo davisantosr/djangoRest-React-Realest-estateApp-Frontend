@@ -2,7 +2,7 @@ import axios from 'axios';
 import { setAlert } from './alert';
 
 import { 
-  SIGNUP_SUCESS,
+  SIGNUP_SUCCESS,
   SIGNUP_FAIL,
   LOGIN_SUCCESS,
   LOGIN_FAIL,
@@ -50,7 +50,7 @@ export const signup = ({name, email, password, password2}) => async dispatch => 
     const res = await axios.post('http://localhost:8000/api/accounts/signup/', body, config);
 
     dispatch({
-      type: SIGNUP_SUCESS,
+      type: SIGNUP_SUCCESS,
       payload: res.data
     });
 

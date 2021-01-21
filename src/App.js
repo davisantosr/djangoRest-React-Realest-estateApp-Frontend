@@ -6,8 +6,8 @@ import About from './containers/About';
 import Contact from './containers/Contact';
 import ListingDetail from './containers/ListingDetail';
 import Listings from './containers/Listings';
-import Login from './containers/SignUp';
-import SignUp from './containers/Login';
+import Login from './containers/Login';
+import SignUp from './containers/SignUp';
 
 import NotFound from './components/NotFound';
 

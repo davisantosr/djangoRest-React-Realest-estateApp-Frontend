@@ -1,9 +1,9 @@
 
 
-const signUp = () => (
+const SignUp = () => (
   <div>
-    signUp
+    SignUp
   </div>
 )
 
-export default signUp;
+export default SignUp;
