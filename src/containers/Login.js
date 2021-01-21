@@ -27,7 +27,7 @@ const Login = ({login, isAuthenticated }) => {
   }
 
   if(isAuthenticated)
-    return <Redirect to='/' />
+    return <Redirect exact to='/' />
 
   return (
     <div className='auth'>
@@ -80,7 +80,7 @@ Login.propTypes = {
 }
 
 const mapStateToProps = state => ({
-  isAthenticated: state.auth.isAuthenticated
+  isAuthenticated: state.auth.isAuthenticated
 });
 
 export default connect(mapStateToProps, { login })(Login);
