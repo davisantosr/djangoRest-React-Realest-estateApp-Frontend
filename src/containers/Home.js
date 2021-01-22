@@ -67,8 +67,10 @@ const Home = () => {
               />
             ) : (null)
           }
+          {
+            console.log(listings)
+          }
         </div>
-
       </section>
 
     </main>
