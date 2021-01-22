@@ -6,15 +6,17 @@ const Listings = ({listings}) => {
     let listingsOnPage = [];
     let result = [];
 
-    listings.map(listing => {
+    listings.map((listing, idx) => {
       return listingsOnPage.push(
         <Card 
+          key={listings.title + toString(`${idx}`)}
           title={listing.title}
           address={listing.address}
           city={listing.city}
           state={listing.state}
           price={listing.price}
           sale_type={listing.sale_type}
+          home_type={listing.home_type}
           bedrooms={listing.bedrooms}
           bathrooms={listing.bathrooms}
           sqft={listing.sqft}
